@@ -179,6 +179,50 @@ p.feat_text{font-style:italic;}
 	color: #dfdfdf;
 	border: medium none #000;
 }
+.input-group {
+  display: table;
+  width: 100%;
+  margin-bottom: 1rem; }
+  .input-group > :first-child {
+    border-radius: 0 0 0 0; }
+  .input-group > :last-child > * {
+    border-radius: 0 0 0 0; }
+
+.input-group-label, .input-group-field, .input-group-button {
+  display: table-cell;
+  margin: 0;
+  vertical-align: middle; }
+
+.input-group-label {
+  text-align: center;
+  width: 1%;
+  height: 100%;
+  padding: 0 1rem;
+  background: #e6e6e6;
+  color: #0a0a0a;
+  border: 1px solid #cacaca;
+  white-space: nowrap; }
+  .input-group-label:first-child {
+    border-right: 0; }
+  .input-group-label:last-child {
+    border-left: 0; }
+
+.input-group-field {
+  border-radius: 0;
+  height: 2.5rem; }
+
+.input-group-button {
+  height: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  width: 1%; }
+  .input-group-button a,
+  .input-group-button input,
+  .input-group-button button {
+    margin: 0; }
+    
+    
 .footer_content a{color:#dfdfdf; text-decoration:none;}
 .footer_left{width:270px; float:left; padding:50px 50px 40px 10px;}
 .footer_right{width:330px; float:right; padding:50px 0 40px 0;}
