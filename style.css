@@ -69,6 +69,14 @@ h1, h2, h3, h4{font-family: 'Lato', sans-serif;}
 	background-color: #FFFFFF;
 	border: thin none #666;
 }
+
+#page1_wrap{
+	margin: auto;
+	width: 1000px;
+	padding: 0 0 40px 0;
+	background-color: #FFFFFF;
+	border: thin none #666;
+}
 .center_content{ clear:both; padding:40px 0 0 0;}
 #header{width:100%; height:140px;}
 .header_content{ width:1000px; margin:auto; line-height:140px;}
