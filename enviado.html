@@ -1,21 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
   <head>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
     <script type="text/javascript">
-// set minutes
 var mins = .05;
- 
-// calculate the seconds (don't change this! unless time progresses at a different speed for you...)
 var secs = mins * 60;
-function countdown() {
-	setTimeout('Decrement()',1000);
+function tiempo() {
+	setTimeout('menos()',1000);
 }
-function Decrement() {
+function menos() {
 	if (document.getElementById) {
 		minutes = document.getElementById("minutes");
 		seconds = document.getElementById("seconds");
-		// if less than a minute remaining
+
 		if (seconds < 59) {
 			seconds.value = secs;
 		} else {
@@ -23,16 +19,14 @@ function Decrement() {
 			seconds.value = getseconds();
 		}
 		secs--;
-		setTimeout('Decrement()',1000);
+		setTimeout('menos()',1000);
 	}
 }
-function getminutes() {
-	// minutes is seconds divided by 60, rounded down
+function getMinutos() {
 	mins = Math.floor(secs / 60);
 	return mins;
 }
-function getseconds() {
-	// take mins remaining (as seconds) away from total seconds remaining
+function getSegundos() {
 	return secs-Math.round(mins *60);
 }
 </script> <meta content="4;URL=perfil.html" http-equiv="refresh" />
@@ -56,9 +50,8 @@ var $ = jQuery.noConflict();
   <body>
     <div id="header">
       <div class="header_content">
-        <div class="logo"><a href="index.html">                                 
-                                                                               
-                                                           <br />
+        <div class="logo"><a href="index.html">
+        <br/>
           </a></div>
         <div class="menu">
           <ul>
@@ -66,7 +59,7 @@ var $ = jQuery.noConflict();
         </div>
       </div>
     </div>
-    <!-- End of Header-->
+
     <div id="page_wrap">
       <div class="center_content">
         <div role="article" class="page_title">
@@ -86,7 +79,7 @@ var $ = jQuery.noConflict();
             id="seconds" />
           segundos. </div>
         <script>
-countdown();
+tiempo();
 </script> <div class="section_13"> </div>
       </div>
     </div>
@@ -98,7 +91,7 @@ countdown();
             <p><a href="#">Vota ya por MultiTask para premios #Webby - hace 7
                 segundos.</a> <a href="#">Recuerda dar like a nuestra página de
                 Facebook - hace 5 minutos</a><a href="#"> ¡ 8 dias para los
-                premios #Webby recuerda voitar por MultiTask !</a></p>
+                premios #Webby recuerda votar por MultiTask !</a></p>
           </div>
         </div>
         <div class="footer_left" style="margin-left: 320px; width: 246px;">
