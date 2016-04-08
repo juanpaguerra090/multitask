@@ -54,6 +54,7 @@ h1, h2, h3, h4{font-family: 'Lato', sans-serif;}
 #wrap{
 	margin: auto;
 	width: 1000px;
+	height: 600px;
 	padding: 0;
 	border-top-style: none;
 	border-right-style: none;
@@ -63,6 +64,7 @@ h1, h2, h3, h4{font-family: 'Lato', sans-serif;}
 #page_wrap{
 	margin: auto;
 	width: 1000px;
+	
 	padding: 0 0 40px 0;
 	background-color: #FFFFFF;
 	border: thin none #666;
