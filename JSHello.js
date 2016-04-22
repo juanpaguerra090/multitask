@@ -30,7 +30,7 @@ var load = function(){
 	  	data: {
 	    	newTodo: '',
 	    	todos: [
-	    	  	{ text: '' }
+	    	  	
 	    	]
 	  	},
 	  	methods: {
