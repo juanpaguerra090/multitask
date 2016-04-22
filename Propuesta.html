@@ -18,6 +18,9 @@ var $ = jQuery.noConflict();
   });
 </script> </head>
   <body>
+    
+	<script type="text/javascript" src="Vue.js" ></script>
+	<script type="text/javascript" src="JSHello.js" ></script>
     <div id="header">
       <div class="header_content">
         <div class="logo"><a href="index.html">
@@ -43,7 +46,15 @@ var $ = jQuery.noConflict();
 <img alt="" src= "images/appto.png" style="width: 1000px; height: 254px;" />
         <div class="section_full">
           <h2 style="margin-left: 5px;">Dinos tus habilidades...</h2>
-          <h2 style="margin-left: 5px;"><input type="text" name=" " style="width:300px;" /><br />
+          <div id="app3">
+            		<input v-model="newTodo" v-on:keyup.enter="addTodo">
+            		<ul>
+              		<li v-for="todo in todos">
+                			<span>{{ todo.text }}</span>
+                			<button v-on:click="removeTodo($index)">X</button>
+              		</li>
+            		</ul>
+          	</div>
           </h2>
           <h2 style="margin-left: 5px;">¿Cuanto cobrarías?</h2>
           <p style="margin-left: 4px;"> <input type="text" name="Nombre" style="width:300px; " />
@@ -52,7 +63,9 @@ var $ = jQuery.noConflict();
             trabajo?</h2>
           <h2 style="margin-left: 5px;"><input type="text" name=" " style="width:300px; height:100px;" /></h2>
           <h2 style="margin-left: 5px;">Agreganos un comentario.</h2>
+          
           <h2 style="margin-left: 5px;"><input type="text" name=" " style="width:300px; height:100px;" /></h2>
+          
           <p><br />
           </p>
           <p><br />
