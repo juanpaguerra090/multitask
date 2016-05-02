@@ -73,8 +73,17 @@ h1, h2, h3, h4{font-family: 'Lato', sans-serif;}
 #header{width:100%; height:140px;}
 .header_content{ width:1000px; margin:auto; line-height:140px;}
 
-.logo{float:left; margin:0 0 0 40px;font-family: 'Lato', sans-serif; font-size:25px; color:#505050; padding:0 0 0 60px; background:url(images/Logo.png) no-repeat left;}
-.logo a{color:#fff;}
+.logo{
+	float:left;
+	margin:0 0 0 40px;
+	background:url(images/Logo.png) no-repeat left;
+	width:200px;
+	height:150px;
+}
+.logo a{
+	color:#fff;
+	
+}
 
 
 
