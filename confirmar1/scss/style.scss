@@ -1,10 +1,10 @@
-@import 'bourbon'; // http://bourbon.io/
+@import 'bourbon'; 
 
-@import '../partials/variables'; // colors, fonts etc...
+@import '../partials/variables';
 
-@import '../partials/mixins'; // custom mixins
+@import '../partials/mixins'; 
 
-@import '../partials/layout'; // responsive grid and media queries
+@import '../partials/layout'; 
 
 html * {
 	-webkit-font-smoothing: antialiased;
@@ -18,7 +18,7 @@ html * {
 body {
 	font: {
 		size: 100%;
-		family: $primary-font; // variables inside partials > _variables.scss
+		family: $primary-font; 
 	}
 	color: $main-text;
 	background-color: $background;
@@ -29,14 +29,10 @@ a {
 	text-decoration: none;
 }
 
-/* -------------------------------- 
 
-Modules - reusable parts of our design
-
--------------------------------- */
 
 .img-replace {
-	/* replace text with an image */
+
 	display: inline-block;
 	overflow: hidden;
 	text-indent: 100%;
@@ -44,11 +40,6 @@ Modules - reusable parts of our design
 	white-space: nowrap;
 }
 
-/* -------------------------------- 
-
-Main components 
-
--------------------------------- */
 
 header {
 	height: 200px;
@@ -83,11 +74,7 @@ header {
 	}
 }
 
-/* -------------------------------- 
 
-xpopup 
-
--------------------------------- */
 
 .cd-popup {
 	position: fixed;
@@ -119,7 +106,7 @@ xpopup
 	box-shadow: 0 0 20px rgba(#000, .2);
 
 	@include transform(translateY(-40px));
-	/* Force Hardware Acceleration in WebKit */
+
 	-webkit-backface-visibility: hidden;
 
 	@include transition-property (transform);
