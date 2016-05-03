@@ -2,10 +2,8 @@
   <head>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
     <script type="text/javascript">
-
 var mins = .05;
 var secs = mins * 60;
-
 function tiempo() {
 	setTimeout('menos()',1000);
 }
@@ -21,18 +19,16 @@ function menos() {
 			seconds.value = getseconds();
 		}
 		secs--;
-		setTimeout('menos()',1000);
+		setTimeout('Decrement()',1000);
 	}
 }
-function getminutes() {
-
+function getMinutos() {
 	mins = Math.floor(secs / 60);
 	return mins;
 }
-function getseconds() {
+function getSegundos() {
 	return secs-Math.round(mins *60);
 }
-
 </script> <meta content="4;URL=perfil.html" http-equiv="refresh" />
 
     <title>Necesito un diseñador | MultiTask</title>
