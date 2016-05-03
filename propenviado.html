@@ -5,10 +5,10 @@
 var mins = .05;
 var secs = mins * 60;
 
-function tiempo() {
-	setTimeout('menos()',1000);
+function Time() {
+	setTimeout('Decrement()',1000);
 }
-function menos() {
+function Decrement() {
 	if (document.getElementById) {
 		minutes = document.getElementById("minutes");
 		seconds = document.getElementById("seconds");
@@ -16,18 +16,18 @@ function menos() {
 		if (seconds < 59) {
 			seconds.value = secs;
 		} else {
-			minutes.value = getminutes();
-			seconds.value = getseconds();
+			minutes.value = getMinutes();
+			seconds.value = getSeconds();
 		}
 		secs--;
 		setTimeout('Decrement()',1000);
 	}
 }
-function getMinutos() {
+function getMinutes() {
 	mins = Math.floor(secs / 60);
 	return mins;
 }
-function getSegundos() {
+function getSeconds() {
 	return secs-Math.round(mins *60);
 }
 </script> <meta content="4;URL=perfil.html" http-equiv="refresh" />
@@ -74,7 +74,7 @@ var $ = jQuery.noConflict();
             id="seconds" />
           segundos. </div>
         <script>
-tiempo();
+Time();
 </script> <div class="section_13"> </div>
       </div>
     </div>
