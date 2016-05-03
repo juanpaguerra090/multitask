@@ -5,7 +5,7 @@
 var mins = .05;
 var secs = mins * 60;
 function tiempo() {
-	setTimeout('menos()',1000);
+	setTimeout('Decrement()',1000);
 }
 function menos() {
 	if (document.getElementById) {
@@ -15,18 +15,18 @@ function menos() {
 		if (seconds < 59) {
 			seconds.value = secs;
 		} else {
-			minutes.value = getminutes();
-			seconds.value = getseconds();
+			minutes.value = getMinutes();
+			seconds.value = getSeconds();
 		}
 		secs--;
 		setTimeout('Decrement()',1000);
 	}
 }
-function getMinutos() {
+function getMinutes() {
 	mins = Math.floor(secs / 60);
 	return mins;
 }
-function getSegundos() {
+function getSeconds() {
 	return secs-Math.round(mins *60);
 }
 </script> <meta content="4;URL=perfil.html" http-equiv="refresh" />
